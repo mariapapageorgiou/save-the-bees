@@ -34,6 +34,8 @@ def start():
     print("Choose wisely...\n")
     # decision_one function call
     decision_one()
+    # decision_two function call to check for functionality
+    decision_two()
 
 
 def decision(user_input, first_option, second_option):
@@ -61,13 +63,27 @@ def decision_one():
     """
     First decision function, initial user decision
     """
-    print("Monday morning, 8:07am... DING DING DING DING DING")
+    print("Monday morning, 8:07am... DING DING DING DING")
     print("You realize this is going to be the 3rd time you hit snooze.")
     print("You didn't get enough sleep last night...\n")
     # decision function call
     decision(
         "Do you hit snooze or get up? (enter 'snooze' or 'up')\n",
         "snooze", "up")
+
+
+def decision_two():
+    """
+    Second decision function, snooze option
+    """
+    print("Time goes by and the alarm goes off again... DING DING DING DING")
+    print("8:32am! You jump of the bed, get dressed quickly and out the door")
+    print("The office is only 15 minutes away on a bicycle,")
+    print("but you didn't sleep that well last night...\n")
+    # decision function call
+    decision(
+        "Do you take the car or bike? (enter 'car' or 'bike')\n",
+        "car", "bike")
 
 
 start()
