@@ -35,10 +35,10 @@ def start():
     # decision_one function call
     decision_one()
     # decision_two function call to check for functionality
-    decision_two()
+    # decision_two()
 
 
-def decision(user_input, first_option, second_option):
+def decision(user_input, first_option, second_option, path_one, path_two):
     """
     Decision function that checks for user input to match
     the required response and proceed to the next step
@@ -48,14 +48,17 @@ def decision(user_input, first_option, second_option):
         if option == first_option:
             # print statement to check for functionality of decision function
             print(option)
+            path_one()
             break
         elif option == second_option:
             # print statement to check for functionality of decision function
             print(option)
+            path_two()
             break
         else:
             # message to the user when input is not first or second option
-            print(f"Enter a valid option: {first_option} or {second_option}")
+            print(f"'{option}' is not a valid option.")
+            print(f"Please enter '{first_option}' or '{second_option}'")
             continue
 
 
@@ -69,7 +72,7 @@ def decision_one():
     # decision function call
     decision(
         "Do you hit snooze or get up? (enter 'snooze' or 'up')\n",
-        "snooze", "up")
+        "snooze", "up", decision_two, decision_three)
 
 
 def decision_two():
@@ -79,11 +82,18 @@ def decision_two():
     print("Time goes by and the alarm goes off again... DING DING DING DING")
     print("8:32am! You jump of the bed, get dressed quickly and out the door")
     print("The office is only 15 minutes away on a bicycle,")
-    print("but you didn't sleep that well last night...\n")
+    print("but you are very tired...\n")
     # decision function call
-    decision(
-        "Do you take the car or bike? (enter 'car' or 'bike')\n",
-        "car", "bike")
+    # decision(
+    #     "Do you take the car or bike? (enter 'car' or 'bike')\n",
+    #     "car", "bike", decision_four, decision_five)
+
+
+def decision_three():
+    """
+    Third decision function, up option
+    """
+    print("Test to check for decision function functionality")
 
 
 start()
