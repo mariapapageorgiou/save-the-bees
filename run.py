@@ -31,6 +31,18 @@ def start():
             break
     print(f"\n{USERNAME}, your next steps will define the future of the bees!")
     print("Choose wisely...\n")  
+    decision_one()
+
+
+def decision_one():
+    """
+    First decision function, initial user decision
+    """
+    print("Monday morning, 8:07am... DING DING DING DING DING")
+    print("You realize this is going to be the 3rd time you hit snooze.")
+    print("You didn't get enough sleep last night...")
+    # create a function to check for user input
+    input("Do you hit snooze or get up? (enter 'snooze' or 'up')\n")
 
 
 start()
