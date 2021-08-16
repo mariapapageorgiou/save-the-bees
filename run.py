@@ -15,4 +15,22 @@ def welcome_message():
     print("Add welcome message here\n")
 
 
-welcome_message()
+def start():
+    """
+    Start function to retrieve username and start the game
+    """
+    welcome_message()
+
+    # In order to esure that the user inputs a username use a while loop
+    while True:
+        USERNAME = input("Enter a username to begin your journey: \n")
+        if USERNAME == "":
+            print("Please enter a username to continue!\n")
+            continue
+        else:
+            break
+    print(f"\n{USERNAME}, your next steps will define the future of the bees!")
+    print("Choose wisely...\n")  
+
+
+start()
