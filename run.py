@@ -1,3 +1,6 @@
+from helpers import decision, killed_the_bees
+
+
 def welcome_message():
     """
     Welcome function to print a message to the user
@@ -12,9 +15,11 @@ def welcome_message():
     print("#         Creator Maria Papageorgiou         #")
     print("#                                            #")
     print("##############################################\n\n")
+    # TO DO: Add welcome message
     print("Add welcome message here\n")
 
 
+# start function works
 def start():
     """
     Start function to retrieve username and start the game
@@ -36,33 +41,7 @@ def start():
     decision_one()
 
 
-def decision(user_input, first_option, second_option, path_one, path_two):
-    """
-    Decision function that checks for user input to match
-    the required response and proceed to the next step
-    """
-    while True:
-        option = input(user_input)
-        if option == first_option:
-            path_one()
-            break
-        elif option == second_option:
-            path_two()
-            break
-        else:
-            # message to the user when input is not first or second option
-            print(f"'{option}' is not a valid option.")
-            print(f"Please enter '{first_option}' or '{second_option}'")
-            continue
-
-
-def killed_the_bees():
-    """
-    Game over function
-    """
-    print("Test functionality of 'killed_the_bees' function")
-
-
+# decision_one function works
 def decision_one():
     """
     First decision function, initial user decision
@@ -76,6 +55,7 @@ def decision_one():
         "snooze", "up", decision_two, decision_three)
 
 
+# decision_two function works
 def decision_two():
     """
     Second decision function, 'snooze' option
@@ -91,6 +71,7 @@ def decision_two():
         "car", "bike", decision_four, decision_five)
 
 
+# TO DO: implement decision_three function
 def decision_three():
     """
     Third decision function, 'up' option
@@ -98,34 +79,49 @@ def decision_three():
     print("Test to check for decision function functionality")
 
 
+# decision_four function works
 def decision_four():
     """
     Fourth deicision function, 'car' option
     """
     print("\n.\n.\n.\n")
     print("You get in the car and start the engine.")
-    print("The oil indication is on (and it has been on for a looooong time)")
+    print("The oil indication is on (and it has been on for a long time)")
     # decision function call
     decision(
         "Do you check the oil or don't? (enter 'check' or don't)\n",
-        "check", "don't", decision_two_alternate, killed_the_bees)
+        "check", "don't", decision_four_step_back, decision_four_end)
 
 
+# decision_four_step_back function works
+def decision_four_step_back():
+    """
+    Second decision alternative, 'check' option
+    redirects user to decision_five
+    """
+    print("\n.\n.\n.\n")
+    print("You check the oil and it is very low")
+    print("You decide to go back and take the bicycle instead")
+    print("Can't risk it")
+    # decision_five function call, return to decision two 'bike'
+    decision_five()
+
+
+# TO DO: implement decision_four_end
+def decision_four_end():
+    """
+    Fourth decision ENDING, killed_the_bees
+    """
+    print("Test decision_four_end function")
+    killed_the_bees()
+
+
+# TO DO: implement decision_five function
 def decision_five():
     """
     Fifth decision function, 'bike' option
     """
     print("Test to check for functionality")
-
-
-def decision_two_alternate():
-    """
-    Second decision alternative, 'check' option
-    redirects user to decision_five
-    """
-    print("You check the oil on the engine and it is very low")
-    print("You decide to go back and take the bicycle instead")
-    decision_five()
 
 
 start()
