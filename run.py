@@ -232,20 +232,36 @@ def decision_eleven():
         "hold", "close", decision_eleven_win, decision_eleven_end)
 
 
-# TO DO: implement decision_eleven_win function
+# decision_eleven_win function works
 def decision_eleven_win():
     """
     Eleventh decision function, 'hold' option, saved_the_bees call
     """
-    print("Test decision_eleven_win")
+    print("As you see the door close you hear that noise again")
+    print("\nBZzzzzzBzzzzzBzZZZ\n")
+    print("You raise your hand and stop the door the last minute")
+    print("A tiny little bee enters slowly and lands on your shoulder")
+    print("'Oh thank you', says your coworker out of breath")
+    print("You look at the curious bee")
+    print("What a beautiful day")
+    # saved_the_bees function call
+    saved_the_bees(start)
 
 
-# TO DO: implement decision_eleven_end function
+# decision_eleven_end function works
 def decision_eleven_end():
     """
     Eleventh decision function, 'close' option, killed_the_bees call
     """
-    print("Test decision_eleven_end")
+    print("The elevator door closes")
+    print("\n")
+    print("Alone in the elevator, you listen...")
+    print("\nDING\n DING\n  DING\n   DING\n    DING\n     DING\n      DING\n")
+    print("As you come out, you see your coworker coming up the stairs")
+    print("'Sorry', you say.\nNo response\n")
+    # killed_the_bees function call
+    killed_the_bees(
+        "Maybe you should make a coffee and take it to them?", start)
 
 
 start()
