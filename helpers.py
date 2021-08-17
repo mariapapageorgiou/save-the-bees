@@ -35,15 +35,38 @@ def killed_the_bees(final_message, function):
     print("#                                           #")
     print("#############################################\n\n")
     # try_again function call
-    try_again(function)
+    play_again(function)
+
+
+# saved_the_bees function works
+def saved_the_bees(function):
+    """
+    Saved the bees function, end of game
+    """
+    print("\n")
+    print("#############################################")
+    print("#                                           #")
+    print("#              Y      O      U              #")
+    print("#               S  A  V  E  D               #")
+    print("#                 T   H   E                 #")
+    print("#                  B E E S                  #")
+    print("#                     *                     #")
+    print("#                    / \                    #")
+    print("#                   /   \                   #")
+    print("#                  /     \                  #")
+    print("#                _/       \_                #")
+    print("#                                           #")
+    print("#############################################\n\n")
+    # try_again function call
+    play_again(function)
 
 
 # try_again function works
-def try_again(choice):
+def play_again(choice):
     """
     Try again function
     """
-    print("Would you like to try again and save the bees?")
+    print("Would you like to play again?")
     user_choice = input("(Type 'yes' or click the button to start over)\n")
     if user_choice == "yes":
         # choice function call > start function

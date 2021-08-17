@@ -1,4 +1,4 @@
-from helpers import decision, killed_the_bees
+from helpers import decision, killed_the_bees, saved_the_bees
 
 
 # welcome_message function works
@@ -199,7 +199,21 @@ def decision_ten():
     # decision function call
     decision(
         "Do you take elevator or the stairs? (enter 'elevator' or 'stairs')\n",
-        "elevator", "stairs", decision_eleven, saved_the_bees)
+        "elevator", "stairs", decision_eleven, decision_ten_win)
+
+
+# decision_ten_win works
+def decision_ten_win():
+    """
+    Tenth decision function, 'stairs' option, saved_the_bees call
+    """
+    print("As you walk up the stairs you hear that noise again")
+    print("\nBZzzzzzBzzzzzBzZZZ\n")
+    print("The window is open and you go closer...")
+    print("The sound becomes louder and louder and then you see her")
+    print("The happiest bumblebee you've ever seen in your life!")
+    # saved_the_bees function call
+    saved_the_bees(start)
 
 
 # TO DO: implement decision_eleven function
@@ -208,14 +222,6 @@ def decision_eleven():
     Eleventh decision function, 'elevator' option
     """
     print("Test decision_eleven")
-
-
-# TO DO: implement saved_the_bees function
-def saved_the_bees():
-    """
-    Saved_the_bees
-    """
-    print("Test saved_the_bees")
 
 
 start()
