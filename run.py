@@ -112,8 +112,15 @@ def decision_four_end():
     """
     Fourth decision ENDING, killed_the_bees
     """
-    print("Test decision_four_end function")
-    killed_the_bees()
+    print("Aaah, there is no time to check the oil")
+    print("\n.\n.\n.\n")
+    print("3 minutes down the road, suddenly, you see smoke!")
+    print("Every second that passes more and more smoke appears")
+    print("The engine starts rumbling . . . and POUF")
+    print("Car is dead")
+    # killed_the_bees function call
+    killed_the_bees(
+        "You look back on your decisions as a bee flies by...", start)
 
 
 # TO DO: implement decision_five function
@@ -121,7 +128,7 @@ def decision_five():
     """
     Fifth decision function, 'bike' option
     """
-    print("Test to check for functionality")
+    print("Test decision_five function")
 
 
 start()

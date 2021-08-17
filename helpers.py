@@ -21,8 +21,16 @@ def decision(user_input, first_option, second_option, path_one, path_two):
 
 # TO DO: fix killed_the_bees function to take parameters of message and start
 #        function
-def killed_the_bees():
+def killed_the_bees(final_message, function):
     """
     Game over function
     """
-    print("Test functionality of 'killed_the_bees' function")
+    print(final_message)
+    print("\n")
+    print("###############################################")
+    print("#                                             #")
+    print("#              THE BEES ARE DEAD              #")
+    print("#                                             #")
+    print("###############################################\n\n")
+    # TO DO: add try_again function to work here
+    function
