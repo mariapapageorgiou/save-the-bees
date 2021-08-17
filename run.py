@@ -156,7 +156,7 @@ def decision_eight():
         "wait", "go", decision_eight_end, decision_eight_step_back)
 
 
-# TO DO: implement decision_eight_step_back function
+# decision_eight_step_back works
 def decision_eight_step_back():
     """
     Back to fifth decision alternative, 'go' option
@@ -172,7 +172,7 @@ def decision_eight_step_back():
     decision_ten()
 
 
-# TO DO: implement decision_eight_end function
+# decision_eight_end works
 def decision_eight_end():
     """
     Eighth decision ENDING, 'wait' option, game over
@@ -188,12 +188,34 @@ def decision_eight_end():
         "What could you have done different?", start)
 
 
-# TO DO: implement decision_ten function
+# decision_ten function works
 def decision_ten():
     """
     Tenth decision function, 'go' option
     """
-    print("Test decision_ten function")
+    print("\n.\n.\n.\n")
+    print("Finally you have arrived at the building")
+    print("Even though you enjoyed that ride your knees feel weak\n")
+    # decision function call
+    decision(
+        "Do you take elevator or the stairs? (enter 'elevator' or 'stairs')\n",
+        "elevator", "stairs", decision_eleven, saved_the_bees)
+
+
+# TO DO: implement decision_eleven function
+def decision_eleven():
+    """
+    Eleventh decision function, 'elevator' option
+    """
+    print("Test decision_eleven")
+
+
+# TO DO: implement saved_the_bees function
+def saved_the_bees():
+    """
+    Saved_the_bees
+    """
+    print("Test saved_the_bees")
 
 
 start()
