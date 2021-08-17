@@ -198,7 +198,7 @@ def decision_ten():
     print("Even though you enjoyed that ride your knees feel weak\n")
     # decision function call
     decision(
-        "Do you take elevator or the stairs? (enter 'elevator' or 'stairs')\n",
+        "Hmmm, elevator or stairs? (enter 'elevator' or 'stairs')\n",
         "elevator", "stairs", decision_eleven, decision_ten_win)
 
 
@@ -216,12 +216,36 @@ def decision_ten_win():
     saved_the_bees(start)
 
 
-# TO DO: implement decision_eleven function
+# decision_eleven function works
 def decision_eleven():
     """
     Eleventh decision function, 'elevator' option
     """
-    print("Test decision_eleven")
+    print("\n.\n.\n.\n")
+    print("DING")
+    print("You enter the elevator and hit the 7th floor")
+    print("You hear somebody call 'Hold the door, hold the door!")
+    print("There is nobody else in the elevator but you\n")
+    # decision function call
+    decision(
+        "Do you hold the door or let it close? (enter 'hold' or 'close')\n",
+        "hold", "close", decision_eleven_win, decision_eleven_end)
+
+
+# TO DO: implement decision_eleven_win function
+def decision_eleven_win():
+    """
+    Eleventh decision function, 'hold' option, saved_the_bees call
+    """
+    print("Test decision_eleven_win")
+
+
+# TO DO: implement decision_eleven_end function
+def decision_eleven_end():
+    """
+    Eleventh decision function, 'close' option, killed_the_bees call
+    """
+    print("Test decision_eleven_end")
 
 
 start()
