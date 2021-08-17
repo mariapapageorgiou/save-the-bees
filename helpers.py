@@ -30,7 +30,21 @@ def killed_the_bees(final_message, function):
     print("###############################################")
     print("#                                             #")
     print("#              THE BEES ARE DEAD              #")
+    print("#              G A M E   O V E R              #")
     print("#                                             #")
     print("###############################################\n\n")
     # TO DO: add try_again function to work here
-    function
+    try_again(function)
+
+
+# try_again function works
+def try_again(choice):
+    """
+    Try again function
+    """
+    print("Would you like to try again and save the bees?")
+    user_choice = input("(Type 'yes' or click the button to start over)\n")
+    if user_choice == "yes":
+        choice()
+    else:
+        print("See you next time...")

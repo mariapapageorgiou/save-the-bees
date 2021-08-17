@@ -107,7 +107,7 @@ def decision_four_step_back():
     decision_five()
 
 
-# TO DO: implement decision_four_end
+# decision_four_end function works
 def decision_four_end():
     """
     Fourth decision ENDING, killed_the_bees
