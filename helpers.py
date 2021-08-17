@@ -29,12 +29,11 @@ def killed_the_bees(final_message, function):
     """
     print(final_message)
     print("\n")
-    print("###############################################")
-    print("#                                             #")
-    print("#              THE BEES ARE DEAD              #")
-    print("#              G A M E   O V E R              #")
-    print("#                                             #")
-    print("###############################################\n\n")
+    print("#############################################")
+    print("#                                           #")
+    print("#             G A M E   O V E R             #")
+    print("#                                           #")
+    print("#############################################\n\n")
     # try_again function call
     try_again(function)
 

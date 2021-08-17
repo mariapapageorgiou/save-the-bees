@@ -104,6 +104,8 @@ def decision_four_step_back():
     print("You check the oil and it is very low")
     print("You decide to go back and take the bicycle instead")
     print("Can't risk it")
+    print("\nBZzzzzzBzzzzzBzZZZ\n")
+    print("Did you hear that? Anyway...")
     # decision_five function call, return to decision two 'bike'
     decision_five()
 
@@ -154,21 +156,36 @@ def decision_eight():
         "wait", "go", decision_eight_end, decision_eight_step_back)
 
 
-# TO DO: implement decision_eight_end function
-def decision_eight_end():
-    """
-    Eighth decision ENDING, 'wait' option, game over
-    """
-    print("Test decision_eight_end function")
-
-
 # TO DO: implement decision_eight_step_back function
 def decision_eight_step_back():
     """
     Back to fifth decision alternative, 'go' option
     redirects user to decision_ten
     """
-    print("Test decision_eight_step_back function")
+    print("\n.\n.\n.\n")
+    print("Just enjoy your ride and drink coffee at the office")
+    print("What a beautiful day...")
+    print("and you don't want to waste one more cup")
+    print("\nBZzzzzzBzzzzzBzZZZ\n")
+    print("What was that? Anyway...")
+    # decision_ten function call, return to decision five 'go'
+    decision_ten()
+
+
+# TO DO: implement decision_eight_end function
+def decision_eight_end():
+    """
+    Eighth decision ENDING, 'wait' option, game over
+    """
+    print("'One cup won't make a difference', you think...")
+    print("\n.\n.\n.\n")
+    print("10 minutes later you are still waiting")
+    print("You look behind and the line is huge")
+    print("Everybody on their phones")
+    print("One cloud in the blue sky catches your eye...\n")
+    # killed_the_bees function call
+    killed_the_bees(
+        "What could you have done different?", start)
 
 
 # TO DO: implement decision_ten function
