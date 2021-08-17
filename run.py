@@ -97,7 +97,7 @@ def decision_four():
 # decision_four_step_back function works
 def decision_four_step_back():
     """
-    Second decision alternative, 'check' option
+    Back to second decision alternative, 'check' option
     redirects user to decision_five
     """
     print("\n.\n.\n.\n")
@@ -111,7 +111,7 @@ def decision_four_step_back():
 # decision_four_end function works
 def decision_four_end():
     """
-    Fourth decision ENDING, killed_the_bees
+    Fourth decision ENDING, 'don't' option, game over
     """
     print("Aaah, there is no time to check the oil")
     print("\n.\n.\n.\n")
@@ -139,12 +139,36 @@ def decision_five():
         "stop", "go", decision_eight, decision_ten)
 
 
-# TO DO: implement decision_eight function
+# decision_eight function works
 def decision_eight():
     """
     Eighth decision function, 'stop' option
     """
-    print("Test decision_eight function")
+    print("\n.\n.\n.\n")
+    print("That coffee smells sooooo good")
+    print("But the line is huge! It might take a while")
+    print("And you forgot your reusable cup\n")
+    # decision function call
+    decision(
+        "Do you wait in line or go? (enter 'wait' or 'go')\n",
+        "wait", "go", decision_eight_end, decision_eight_step_back)
+
+
+# TO DO: implement decision_eight_end function
+def decision_eight_end():
+    """
+    Eighth decision ENDING, 'wait' option, game over
+    """
+    print("Test decision_eight_end function")
+
+
+# TO DO: implement decision_eight_step_back function
+def decision_eight_step_back():
+    """
+    Back to fifth decision alternative, 'go' option
+    redirects user to decision_ten
+    """
+    print("Test decision_eight_step_back function")
 
 
 # TO DO: implement decision_ten function
