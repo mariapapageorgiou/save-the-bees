@@ -1,6 +1,7 @@
 from helpers import decision, killed_the_bees
 
 
+# welcome_message function works
 def welcome_message():
     """
     Welcome function to print a message to the user
@@ -89,7 +90,7 @@ def decision_four():
     print("The oil indication is on (and it has been on for a long time)")
     # decision function call
     decision(
-        "Do you check the oil or don't? (enter 'check' or don't)\n",
+        "Do you check the oil or don't? (enter 'check' or 'don't')\n",
         "check", "don't", decision_four_step_back, decision_four_end)
 
 
@@ -123,12 +124,35 @@ def decision_four_end():
         "You look back on your decisions as a bee flies by...", start)
 
 
-# TO DO: implement decision_five function
+# decision_five function works
 def decision_five():
     """
     Fifth decision function, 'bike' option
     """
-    print("Test decision_five function")
+    print("\n.\n.\n.\n")
+    print("With no second guess, you hop on your bicycle")
+    print("The weather is so good and you smell coffee around the corner")
+    print("Even though you will be late you need some caffeine\n")
+    # decision function call
+    decision(
+        "Do you stop for a coffee or go on? (enter 'stop' or 'go')\n",
+        "stop", "go", decision_eight, decision_ten)
+
+
+# TO DO: implement decision_eight function
+def decision_eight():
+    """
+    Eighth decision function, 'stop' option
+    """
+    print("Test decision_eight function")
+
+
+# TO DO: implement decision_ten function
+def decision_ten():
+    """
+    Tenth decision function, 'go' option
+    """
+    print("Test decision_ten function")
 
 
 start()
