@@ -184,12 +184,30 @@ def decision_six():
         "walk", "car", decision_nine, decision_four)
 
 
-# TO DO: implement decision_seven function call
+# decision_seven function call
 def decision_seven():
     """
     Seventh decision function, 'no' option
     """
-    print("Test decision_seven function")
+    # print_statements function call
+    print_statements([
+        "And out the door, down the elevator, out to the world",
+        "The bus stop is only a few blocks away",
+        "Last time the bus was late and you didn't make it in time to work",
+        "There is a taxi stopped at the traffic light\n"
+    ])
+    # decision function call
+    decision(
+        "Do you take the bus or taxi? (enter 'bus' or 'taxi')\n",
+        "taxi", "bus", decision_seven_end, decision_twelve)
+
+
+# TO DO: implement decision_seven_end function call
+def decision_seven_end():
+    """
+    Seventh decision function, 'taxi' option, game over
+    """
+    print("Test decision_seven_end function")
 
 
 # decision_eight function call
@@ -259,7 +277,7 @@ def decision_nine():
     # decision function call
     decision(
         "Do youpick it up or keep on walking? (enter 'pick' or 'walk')\n",
-        "pick", "walk", decision_ten_alt_one, decision_nine_end)
+        "pick", "walk", decision_ten, decision_nine_end)
 
 
 # decision_nine_end function call
@@ -287,20 +305,12 @@ def decision_ten():
     # print_statements function call
     print_statements([
         "Finally you have arrived at the building",
-        "Even though you enjoyed that ride your knees feel weak\n"
+        "Your knees start to feel a bit weak\n"
     ])
     # decision function call
     decision(
         "Hmmm, elevator or stairs? (enter 'elevator' or 'stairs')\n",
         "elevator", "stairs", decision_eleven, decision_ten_win)
-
-
-# TO DO: implement decision_ten_alt_one function call
-def decision_ten_alt_one():
-    """
-    Tenth alternative one decision function, 'pick' option
-    """
-    print("Test decision_ten_alt_one function")
 
 
 # decision_ten_win call
@@ -373,6 +383,14 @@ def decision_eleven_end():
     killed_the_bees(
         f"Maybe you should make a coffee and take it to them {USERNAME}?",
         decision_one)
+
+
+# TO DO: implement decision_twelve function call
+def decision_twelve():
+    """
+    Twelfth decision function, 'bus' option
+    """
+    print("Test decision_twelfth function")
 
 
 start()
