@@ -202,12 +202,21 @@ def decision_seven():
         "taxi", "bus", decision_seven_end, decision_twelve)
 
 
-# TO DO: implement decision_seven_end function call
+# decision_seven_end function call
 def decision_seven_end():
     """
     Seventh decision function, 'taxi' option, game over
     """
-    print("Test decision_seven_end function")
+    # print_statements function call
+    print_statements([
+        "'Taxi', you raise your hand",
+        "The taxi accelerates very fast and stops right next to your feet",
+        "As you open the door and enter you realize",
+        "How filthy this taxi is\n"
+    ])
+    # killed_the_bees function call
+    killed_the_bees(
+        f"What do you think, {USERNAME}? Maybe walk next time?", decision_one)
 
 
 # decision_eight function call
