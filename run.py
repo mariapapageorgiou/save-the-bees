@@ -264,12 +264,12 @@ def decision_eight_end():
         "'One cup won't make a difference', you think...\n.\n.\n.\n",
         "10 minutes later you are still waiting",
         "You look behind and the line is huge",
-        "Everybody on their phones",
-        "One cloud in the blue sky catches your eye...\n"
+        "Everybody is on their phones",
+        "In the background an overflowing trashcan catches your eye\n"
     ])
     # killed_the_bees function call
     killed_the_bees(
-        f"What could you have done different {USERNAME}?", decision_one)
+        f"One cup can make a difference after all, {USERNAME}!", decision_one)
 
 
 # decision_nine function call
@@ -320,6 +320,21 @@ def decision_ten():
     decision(
         "Hmmm, elevator or stairs? (enter 'elevator' or 'stairs')\n",
         "elevator", "stairs", decision_eleven, decision_ten_win)
+
+
+# decision_ten_alt function call
+def decision_ten_alt():
+    """
+    Tenth alternative decision function, 'fruit' option
+    """
+    # print_statements function call
+    print_statements([
+        "'I will go for an apple and a banana, Pat. Don't need a bag'",
+        "As you exit the shop, you hear something",
+        "\nBZzzzzzBzzzzzBzZZZ\n\n.\n.\n.\n"
+    ])
+    # decision_ten function call
+    decision_ten()
 
 
 # decision_ten_win call
@@ -406,7 +421,7 @@ def decision_twelve():
         "You get off the bus and enter the mini market next to your office",
         f"'Hey, {USERNAME}! How are you? I got your favorite sandwich in.'",
         "'Hi, Pat. Thank you, but I decided to be more considerate",
-        " about prepackaged items and plastic waste'\n"
+        "about prepackaged items and plastic waste'\n"
     ])
     # decision function call
     decision(
@@ -415,20 +430,22 @@ def decision_twelve():
         "fruit", "sandwich", decision_ten_alt, decision_twelve_end)
 
 
-# TO DO: implement decision_ten_alt function call
-def decision_ten_alt():
-    """
-    Tenth alternative decision function, 'fruit' option
-    """
-    print("Test for decision_ten_alt")
-
-
-# TO DO: implement decision_twelve_end function call
+# decision_twelve_end function call
 def decision_twelve_end():
     """
     Twelfth end decision function, 'sandwich' option
     """
-    print("Test for decision_twelve_end")
+    # print_statements function call
+    print_statements([
+        "'Oh, it's ok, right?",
+        "I will take the sandwich, Pat!'",
+        "You unwrap it and a piece of the plastic flies up in the sky",
+        "'Oh no!', you say.\n"
+    ])
+    # killed_the_bees function call
+    killed_the_bees(
+        f"Maybe you should make a coffee and take it to them {USERNAME}?",
+        decision_one)
 
 
 start()
