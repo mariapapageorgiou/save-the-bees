@@ -104,8 +104,8 @@ def decision_four():
     """
     # print_statements function call
     print_statements([
-        "You get in the car and start the engine.",
-        "The oil indication is on (and it has been on for a long time)\n"
+        "You get in the car and start the engine",
+        "The oil indication is on\n"
     ])
     # decision function call
     decision(
@@ -138,11 +138,11 @@ def decision_four_end():
     """
     # print_statements function call
     print_statements([
-        "Aaah, there is no time to check the oil\n",
+        "That light has been there a long time and never caused a problem\n",
         "3 minutes down the road, suddenly, you see smoke!",
         "Every second that passes more and more smoke appears",
         "The engine starts rumbling . . . and POUF",
-        "Car is dead"
+        "Car is dead\n"
     ])
     # killed_the_bees function call
     killed_the_bees(
@@ -166,12 +166,22 @@ def decision_five():
         "stop", "go", decision_eight, decision_ten)
 
 
-# TO DO: implement decision_six function call
+# decision_six function call
 def decision_six():
     """
     Sixth decision function, 'off' option
     """
-    print("Test decision_six function")
+    # print_statements function call
+    print_statements([
+        "As you go down the stairs and look at your watch",
+        "8:26am. Time has slipped by rather quickly",
+        "You can make it on time if you walk",
+        "But you don't want to rush at the same time\n"
+    ])
+    # decision function call
+    decision(
+        "Do you walk or take the car? (enter 'walk' or 'car')\n",
+        "walk", "car", decision_nine, decision_four)
 
 
 # TO DO: implement decision_seven function call
@@ -233,6 +243,14 @@ def decision_eight_end():
     # killed_the_bees function call
     killed_the_bees(
         f"What could you have done different {USERNAME}?", decision_one)
+
+
+# TO DO: implement decision_nine function call
+def decision_nine():
+    """
+    Ninth decision function, 'walk' option
+    """
+    print("Test decision_ninth function")
 
 
 # decision_ten function call
