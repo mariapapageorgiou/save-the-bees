@@ -37,8 +37,11 @@ def start():
             continue
         else:
             break
-    print(f"\n{USERNAME}, your next steps will define the future of the bees!")
-    print("Choose wisely...\n")
+    # print_statements function call
+    print_statements([
+        f"\n{USERNAME}, your next steps will define the future of the bees!",
+        "Choose wisely...\n"
+    ])
     # decision_one function call
     decision_one()
 
