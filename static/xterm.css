@@ -181,11 +181,11 @@ button {
     text-transform: uppercase;
     margin: 10px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 button:hover {
     background-color: green;
     border: 1px solid black;
     color: white;
-    cursor: pointer;
 }
