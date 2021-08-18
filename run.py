@@ -1,7 +1,7 @@
-from helpers import decision, killed_the_bees, saved_the_bees
+from helpers import decision, killed_the_bees, saved_the_bees, print_statements
 
 
-# welcome_message function works
+# welcome_message function call
 def welcome_message():
     """
     Welcome function to print a message to the user
@@ -20,7 +20,7 @@ def welcome_message():
     print("Add welcome message here\n")
 
 
-# start function works
+# start function call
 def start():
     """
     Start function to retrieve username and start the game
@@ -44,30 +44,35 @@ def start():
     decision_one()
 
 
-# decision_one function works
+# decision_one function call
 def decision_one():
     """
     First decision function, initial user decision
     """
-    print("\nMonday morning, 8:07am... DING DING DING DING")
-    print("You realize this is going to be the 3rd time you hit snooze.")
-    print("You didn't get enough sleep last night...\n")
+    # print_statements function call
+    print_statements([
+        "\nMonday morning, 8:07am... DING DING DING DING",
+        "You realize this is going to be the 3rd time you hit snooze.",
+        "You didn't get enough sleep last night...\n"
+    ])
     # decision function call
     decision(
         "Do you hit snooze or get up? (enter 'snooze' or 'up')\n",
         "snooze", "up", decision_two, decision_three)
 
 
-# decision_two function works
+# decision_two function call
 def decision_two():
     """
     Second decision function, 'snooze' option
     """
-    print("\n.\n.\n.\n")
-    print("Time goes by and the alarm goes off again... DING DING DING DING")
-    print("8:32am! You jump of the bed, get dressed quickly and out the door")
-    print("The office is only 15 minutes away on a bicycle,")
-    print("but you are very tired...\n")
+    # print_statements function call
+    print_statements([
+        "Time goes by and the alarm goes off again... DING DING DING DING",
+        "8:32am! You jump of the bed, get dressed quickly and out the door",
+        "The office is only 15 minutes away on a bicycle,",
+        "but you are very tired...\n"
+    ])
     # decision function call
     decision(
         "Do you take the car or bike? (enter 'car' or 'bike')\n",
@@ -79,192 +84,217 @@ def decision_three():
     """
     Third decision function, 'up' option
     """
+    # print_statements function call
     print("Test to check for decision function functionality")
 
 
-# decision_four function works
+# decision_four function call
 def decision_four():
     """
     Fourth deicision function, 'car' option
     """
-    print("\n.\n.\n.\n")
-    print("You get in the car and start the engine.")
-    print("The oil indication is on (and it has been on for a long time)\n")
+    # print_statements function call
+    print_statements([
+        "You get in the car and start the engine.",
+        "The oil indication is on (and it has been on for a long time)\n"
+    ])
     # decision function call
     decision(
         "Do you check the oil, yes or no? (enter 'yes' or 'no')\n",
         "yes", "no", decision_four_step_back, decision_four_end)
 
 
-# decision_four_step_back function works
+# decision_four_step_back function call
 def decision_four_step_back():
     """
     Back to second decision alternative, 'yes' option
     redirects user to decision_five
     """
-    print("\n.\n.\n.\n")
-    print("You check the oil and it is very low")
-    print("You decide to go back and take the bicycle instead")
-    print("Can't risk it")
-    print("\nBZzzzzzBzzzzzBzZZZ\n")
-    print("Did you hear that? Anyway...")
+    # print_statements function call
+    print_statements([
+        "You check the oil and it is very low",
+        "You decide to go back and take the bicycle instead",
+        "Can't risk it",
+        "\nBZzzzzzBzzzzzBzZZZ\n",
+        "Did you hear that? Anyway..."
+    ])
     # decision_five function call, return to decision two 'bike'
     decision_five()
 
 
-# decision_four_end function works
+# decision_four_end function call
 def decision_four_end():
     """
     Fourth decision ENDING, 'no' option, game over
     """
-    print("Aaah, there is no time to check the oil")
-    print("\n.\n.\n.\n")
-    print("3 minutes down the road, suddenly, you see smoke!")
-    print("Every second that passes more and more smoke appears")
-    print("The engine starts rumbling . . . and POUF")
-    print("Car is dead")
+    # print_statements function call
+    print_statements([
+        "Aaah, there is no time to check the oil\n",
+        "3 minutes down the road, suddenly, you see smoke!",
+        "Every second that passes more and more smoke appears",
+        "The engine starts rumbling . . . and POUF",
+        "Car is dead"
+    ])
     # killed_the_bees function call
     killed_the_bees(
         "You look back on your decisions as a bee flies by...", decision_one)
 
 
-# decision_five function works
+# decision_five function call
 def decision_five():
     """
     Fifth decision function, 'bike' option
     """
-    print("\n.\n.\n.\n")
-    print("With no second guess, you hop on your bicycle")
-    print("The weather is so good and you smell coffee around the corner")
-    print("Even though you will be late you need some caffeine\n")
+    # print_statements function call
+    print_statements([
+        "With no second guess, you hop on your bicycle",
+        "The weather is so good and you smell coffee around the corner",
+        "Even though you will be late you need some caffeine\n"
+    ])
     # decision function call
     decision(
         "Do you stop for a coffee or go on? (enter 'stop' or 'go')\n",
         "stop", "go", decision_eight, decision_ten)
 
 
-# decision_eight function works
+# decision_eight function call
 def decision_eight():
     """
     Eighth decision function, 'stop' option
     """
-    print("\n.\n.\n.\n")
-    print("That coffee smells sooooo good")
-    print("But the line is huge! It might take a while")
-    print("And you forgot your reusable cup\n")
+    # print_statements function call
+    print_statements([
+        "That coffee smells sooooo good",
+        "But the line is huge! It might take a while",
+        "And you forgot your reusable cup\n"
+    ])
     # decision function call
     decision(
         "Do you wait in line or go? (enter 'wait' or 'go')\n",
         "wait", "go", decision_eight_end, decision_eight_step_back)
 
 
-# decision_eight_step_back works
+# decision_eight_step_back call
 def decision_eight_step_back():
     """
     Back to fifth decision alternative, 'go' option
     redirects user to decision_ten
     """
-    print("\n.\n.\n.\n")
-    print("Just enjoy your ride and drink coffee at the office")
-    print("What a beautiful day...")
-    print("and you don't want to waste one more cup")
-    print("\nBZzzzzzBzzzzzBzZZZ\n")
-    print("What was that? Anyway...")
+    # print_statements function call
+    print_statements([
+        "Just enjoy your ride and drink coffee at the office",
+        "What a beautiful day...",
+        "and you don't want to waste one more cup",
+        "\nBZzzzzzBzzzzzBzZZZ\n",
+        "What was that? Anyway..."
+    ])
     # decision_ten function call, return to decision five 'go'
     decision_ten()
 
 
-# decision_eight_end works
+# decision_eight_end call
 def decision_eight_end():
     """
     Eighth decision ENDING, 'wait' option, game over
     """
-    print("'One cup won't make a difference', you think...")
-    print("\n.\n.\n.\n")
-    print("10 minutes later you are still waiting")
-    print("You look behind and the line is huge")
-    print("Everybody on their phones")
-    print("One cloud in the blue sky catches your eye...\n")
+    # print_statements function call
+    print_statements([
+        "'One cup won't make a difference', you think...\n.\n.\n.\n",
+        "10 minutes later you are still waiting",
+        "You look behind and the line is huge",
+        "Everybody on their phones",
+        "One cloud in the blue sky catches your eye...\n"
+    ])
     # killed_the_bees function call
     killed_the_bees(
         f"What could you have done different {USERNAME}?", decision_one)
 
 
-# decision_ten function works
+# decision_ten function call
 def decision_ten():
     """
     Tenth decision function, 'go' option
     """
-    print("\n.\n.\n.\n")
-    print("Finally you have arrived at the building")
-    print("Even though you enjoyed that ride your knees feel weak\n")
+    # print_statements function call
+    print_statements([
+        "Finally you have arrived at the building",
+        "Even though you enjoyed that ride your knees feel weak\n"
+    ])
     # decision function call
     decision(
         "Hmmm, elevator or stairs? (enter 'elevator' or 'stairs')\n",
         "elevator", "stairs", decision_eleven, decision_ten_win)
 
 
-# decision_ten_win works
+# decision_ten_win call
 def decision_ten_win():
     """
     Tenth decision function, 'stairs' option, saved_the_bees call
     """
-    print("As you walk up the stairs you hear that noise again")
-    print("\nBZzzzzzBzzzzzBzZZZ\n")
-    print("The window is open and you go closer...")
-    print("The sound becomes louder and louder and then you see her")
-    print("The happiest bumblebee you've ever seen in your life!")
+    # print_statements function call
+    print_statements([
+        "As you walk up the stairs you hear a noise",
+        "\nBZzzzzzBzzzzzBzZZZ\n",
+        "The window is open and you go closer...",
+        "The sound becomes louder and louder and then you see her",
+        "The happiest bumblebee you've ever seen in your life!"
+    ])
     # saved_the_bees function call
     saved_the_bees(decision_one)
 
 
-# decision_eleven function works
+# decision_eleven function call
 def decision_eleven():
     """
     Eleventh decision function, 'elevator' option
     """
-    print("\n.\n.\n.\n")
-    print("DING")
-    print("You enter the elevator and hit the 7th floor")
-    print("You hear somebody call 'Hold the door, hold the door!")
-    print("There is nobody else in the elevator but you\n")
+    # print_statements function call
+    print_statements([
+        "DING\nYou enter the elevator and hit the 7th floor",
+        "You hear somebody call 'Hold the door, hold the door!",
+        "There is nobody else in the elevator but you\n"
+    ])
     # decision function call
     decision(
         "Do you hold the door or let it close? (enter 'hold' or 'close')\n",
         "hold", "close", decision_eleven_win, decision_eleven_end)
 
 
-# decision_eleven_win function works
+# decision_eleven_win function call
 def decision_eleven_win():
     """
     Eleventh decision function, 'hold' option, saved_the_bees call
     """
-    print("\n.\n.\n.\n")
-    print("As you see the door close you hear a noise...")
-    print("\nBZzzzzzBzzzzzBzZZZ\n")
-    print("You raise your hand and stop the door the last minute")
-    print("A tiny little bee enters slowly and lands on your shoulder")
-    print(f"'Oh thank you {USERNAME}', says your coworker out of breath")
-    print("You look at the curious bee")
-    print("What a beautiful day")
+    # print_statements function call
+    print_statements([
+        "As you see the door close you hear a noise...",
+        "\nBZzzzzzBzzzzzBzZZZ\n",
+        "You raise your hand and stop the door the last minute",
+        "A tiny little bee enters slowly and lands on your shoulder",
+        f"'Oh thank you {USERNAME}', says your coworker out of breath",
+        "You look at the curious bee . . .",
+        "What a beautiful day"
+    ])
     # saved_the_bees function call
     saved_the_bees(decision_one)
 
 
-# decision_eleven_end function works
+# decision_eleven_end function call
 def decision_eleven_end():
     """
     Eleventh decision function, 'close' option, killed_the_bees call
     """
-    print("The elevator door closes")
-    print("\n")
-    print("Alone in the elevator, you listen...")
-    print("\nDING\n DING\n  DING\n   DING\n    DING\n     DING\n      DING\n")
-    print("As you come out, you see your coworker coming up the stairs")
-    print("'Sorry', you say.\nNo response\n")
+    # print_statements function call
+    print_statements([
+        "The elevator door closes\n",
+        "Alone in the elevator, you listen...",
+        "\nDING\n DING\n  DING\n   DING\n    DING\n     DING\n      DING\n",
+        "As you come out, you see your coworker coming up the stairs",
+        "'Sorry', you say.\nNo response\n"
+    ])
     # killed_the_bees function call
     killed_the_bees(
-        f"Maybe you should make a coffee and take it to them {USERNAME}?", 
+        f"Maybe you should make a coffee and take it to them {USERNAME}?",
         decision_one)
 
 
