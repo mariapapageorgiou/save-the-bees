@@ -6,15 +6,15 @@ def welcome_message():
     """
     Welcome function to print a message to the user
     """
-    print("         ##############################################")
-    print("         #                                            #")
-    print("         #                    SAVE                    #")
-    print("         #                    THE                     #")
-    print("         #                    BEES                    #")
-    print("         #                                            #")
-    print("         #         Creator Maria Papageorgiou         #")
-    print("         #                                            #")
-    print("         ##############################################")
+    print("               ##############################################")
+    print("               #                                            #")
+    print("               #                    SAVE                    #")
+    print("               #                    THE                     #")
+    print("               #                    BEES                    #")
+    print("               #                                            #")
+    print("               #         Creator Maria Papageorgiou         #")
+    print("               #                                            #")
+    print("               ##############################################")
     print_statements([
         "\n",
         "Fun Facts about bees:\n",
