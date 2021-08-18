@@ -1,4 +1,4 @@
-# import time
+import time
 
 
 # decision function call
@@ -86,5 +86,4 @@ def play_again(choice):
 def print_statements(statements):
     for statement in statements:
         print(statement)
-        # comment out time for testing
-        # time.sleep(1.5)
+        time.sleep(1.5)

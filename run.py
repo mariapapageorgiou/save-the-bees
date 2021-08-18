@@ -16,8 +16,7 @@ def welcome_message():
     print("#         Creator Maria Papageorgiou         #")
     print("#                                            #")
     print("##############################################\n\n")
-    # TO DO: Add welcome message
-    print("Add welcome message here\n")
+    print("'Save the Bees' is a project thatct \n")
 
 
 # start function call
