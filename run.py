@@ -34,7 +34,6 @@ def start():
     Start function to retrieve username and start the game
     """
     welcome_message()
-
     # In order to esure that the user inputs a username use a while loop
     while True:
         # global USERNAME in order to access the username input
@@ -138,7 +137,7 @@ def decision_four_step_back():
         "\nBZzzzzzBzzzzzBzZZZ\n",
         "Did you hear that? Anyway..."
     ])
-    # decision_five function call, return to decision two 'bike'
+    # decision_five function call
     decision_five()
 
 

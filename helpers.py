@@ -11,13 +11,13 @@ def decision(user_input, first_option, second_option, path_one, path_two):
     while True:
         option = input(user_input).lower()
         if option == first_option:
-            # path_one function call (changes as story progresses)
             print("\n.\n.\n.\n")
+            # path_one function call (changes as story progresses)
             path_one()
             break
         elif option == second_option:
-            # path_two function call (changes as story progresses)
             print("\n.\n.\n.\n")
+            # path_two function call (changes as story progresses)
             path_two()
             break
         else:
@@ -78,7 +78,7 @@ def play_again(choice):
     print("Would you like to play again?")
     user_choice = input("(Type 'yes' or click the button to start over)\n")
     if user_choice.lower() == "yes":
-        # choice function call > start function
+        # choice function call > decision_one function call
         choice()
     else:
         print("See you next time!")
