@@ -33,13 +33,14 @@ def killed_the_bees(final_message, function):
     Game over function
     """
     print(final_message)
-    print_statements([
-        "\n\n               ###############################################",
-        "               #                                             #",
-        "               #              G A M E   O V E R              #",
-        "               #                                             #",
-        "               ###############################################\n\n"
-    ])
+    time.sleep(3)
+    print("\n\n")
+    print("                ###############################################")
+    print("                #                                             #")
+    print("                #              G A M E   O V E R              #")
+    print("                #                                             #")
+    print("                ###############################################")
+    print("\n\n")
     # try_again function call
     play_again(function)
 
@@ -49,21 +50,22 @@ def saved_the_bees(function):
     """
     Saved the bees function, end of game
     """
-    print_statements([
-        "\n\n               ###############################################",
-        "               #                                             #",
-        "               #               Y      O      U               #",
-        "               #                S  A  V  E  D                #",
-        "               #                  T   H   E                  #",
-        "               #                   B E E S                   #",
-        "               #                      *                      #",
-        "               #                     / \                     #",
-        "               #                    /   \                    #",
-        "               #                   /     \                   #",
-        "               #                 _/       \_                 #",
-        "               #                                             #",
-        "               ###############################################\n\n"
-    ])
+    time.sleep(3)
+    print("\n\n")
+    print("                ###############################################")
+    print("                #                                             #")
+    print("                #               Y      O      U               #")
+    print("                #                S  A  V  E  D                #")
+    print("                #                  T   H   E                  #")
+    print("                #                   B E E S                   #")
+    print("                #                      *                      #")
+    print("                #                     / \                     #")
+    print("                #                    /   \                    #")
+    print("                #                   /     \                   #")
+    print("                #                 _/       \_                 #")
+    print("                #                                             #")
+    print("                ###############################################")
+    print("\n\n")
     # try_again function call
     play_again(function)
 
