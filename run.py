@@ -6,7 +6,6 @@ def welcome_message():
     """
     Welcome function to print a message to the user
     """
-    print()
     print("##############################################")
     print("#                                            #")
     print("#                    SAVE                    #")
@@ -15,8 +14,18 @@ def welcome_message():
     print("#                                            #")
     print("#         Creator Maria Papageorgiou         #")
     print("#                                            #")
-    print("##############################################\n\n")
-    print("'Save the Bees' is a project thatct \n")
+    print("##############################################")
+    print_statements([
+        "\n",
+        "Fun Facts about bees:\n",
+        "1. Bees beat their wings 11,400 times in one minute",
+        "2. Only female bees can sting. Male bees don’t have stingers",
+        "3. Honey bees communicate through a series of dance moves",
+        "4. Each Honey Bee from the same hive has their own specific color"
+        " identification",
+        "5. Bees have 5 eyes\n",
+        "* * * Enjoy the game * * *\n"
+    ])
 
 
 # start function call
