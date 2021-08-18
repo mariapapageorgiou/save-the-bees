@@ -29,6 +29,8 @@ def start():
 
     # In order to esure that the user inputs a username use a while loop
     while True:
+        # global USERNAME in order to access the username input
+        global USERNAME
         USERNAME = input("Enter a username to begin your journey: \n")
         if USERNAME == "":
             # promts the user to enter a username
@@ -47,7 +49,7 @@ def decision_one():
     """
     First decision function, initial user decision
     """
-    print("Monday morning, 8:07am... DING DING DING DING")
+    print("\nMonday morning, 8:07am... DING DING DING DING")
     print("You realize this is going to be the 3rd time you hit snooze.")
     print("You didn't get enough sleep last night...\n")
     # decision function call
@@ -87,17 +89,17 @@ def decision_four():
     """
     print("\n.\n.\n.\n")
     print("You get in the car and start the engine.")
-    print("The oil indication is on (and it has been on for a long time)")
+    print("The oil indication is on (and it has been on for a long time)\n")
     # decision function call
     decision(
-        "Do you check the oil or don't? (enter 'check' or 'don't')\n",
-        "check", "don't", decision_four_step_back, decision_four_end)
+        "Do you check the oil, yes or no? (enter 'yes' or 'no')\n",
+        "yes", "no", decision_four_step_back, decision_four_end)
 
 
 # decision_four_step_back function works
 def decision_four_step_back():
     """
-    Back to second decision alternative, 'check' option
+    Back to second decision alternative, 'yes' option
     redirects user to decision_five
     """
     print("\n.\n.\n.\n")
@@ -113,7 +115,7 @@ def decision_four_step_back():
 # decision_four_end function works
 def decision_four_end():
     """
-    Fourth decision ENDING, 'don't' option, game over
+    Fourth decision ENDING, 'no' option, game over
     """
     print("Aaah, there is no time to check the oil")
     print("\n.\n.\n.\n")
@@ -123,7 +125,7 @@ def decision_four_end():
     print("Car is dead")
     # killed_the_bees function call
     killed_the_bees(
-        "You look back on your decisions as a bee flies by...", start)
+        "You look back on your decisions as a bee flies by...", decision_one)
 
 
 # decision_five function works
@@ -185,7 +187,7 @@ def decision_eight_end():
     print("One cloud in the blue sky catches your eye...\n")
     # killed_the_bees function call
     killed_the_bees(
-        "What could you have done different?", start)
+        f"What could you have done different {USERNAME}?", decision_one)
 
 
 # decision_ten function works
@@ -213,7 +215,7 @@ def decision_ten_win():
     print("The sound becomes louder and louder and then you see her")
     print("The happiest bumblebee you've ever seen in your life!")
     # saved_the_bees function call
-    saved_the_bees(start)
+    saved_the_bees(decision_one)
 
 
 # decision_eleven function works
@@ -237,15 +239,16 @@ def decision_eleven_win():
     """
     Eleventh decision function, 'hold' option, saved_the_bees call
     """
-    print("As you see the door close you hear that noise again")
+    print("\n.\n.\n.\n")
+    print("As you see the door close you hear a noise...")
     print("\nBZzzzzzBzzzzzBzZZZ\n")
     print("You raise your hand and stop the door the last minute")
     print("A tiny little bee enters slowly and lands on your shoulder")
-    print("'Oh thank you', says your coworker out of breath")
+    print(f"'Oh thank you {USERNAME}', says your coworker out of breath")
     print("You look at the curious bee")
     print("What a beautiful day")
     # saved_the_bees function call
-    saved_the_bees(start)
+    saved_the_bees(decision_one)
 
 
 # decision_eleven_end function works
@@ -261,7 +264,8 @@ def decision_eleven_end():
     print("'Sorry', you say.\nNo response\n")
     # killed_the_bees function call
     killed_the_bees(
-        "Maybe you should make a coffee and take it to them?", start)
+        f"Maybe you should make a coffee and take it to them {USERNAME}?", 
+        decision_one)
 
 
 start()

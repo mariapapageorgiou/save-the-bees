@@ -6,7 +6,7 @@ def decision(user_input, first_option, second_option, path_one, path_two):
     """
     # check for user input to match first_option or second_option
     while True:
-        option = input(user_input)
+        option = input(user_input).lower()
         if option == first_option:
             # path_one function call (changes as story progresses)
             path_one()
