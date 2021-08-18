@@ -86,4 +86,5 @@ def play_again(choice):
 def print_statements(statements):
     for statement in statements:
         print(statement)
-        time.sleep(1.5)
+        # comment out time for testing
+        # time.sleep(1.5)

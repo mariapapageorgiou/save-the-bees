@@ -79,13 +79,22 @@ def decision_two():
         "car", "bike", decision_four, decision_five)
 
 
-# TO DO: implement decision_three function
+# decision_three function call
 def decision_three():
     """
     Third decision function, 'up' option
     """
     # print_statements function call
-    print("Test to check for decision function functionality")
+    print_statements([
+        "'Aaaaaah', what a big yawn...",
+        "You get up, put some music on and get dressed",
+        "As you open the door to exit,",
+        "you spot a few lights on at the end of the room\n"
+    ])
+    # decision function call
+    decision(
+        "Do you go back and turn them off or not? (enter 'off' or 'no')\n",
+        "off", "no", decision_six, decision_seven)
 
 
 # decision_four function call
@@ -155,6 +164,22 @@ def decision_five():
     decision(
         "Do you stop for a coffee or go on? (enter 'stop' or 'go')\n",
         "stop", "go", decision_eight, decision_ten)
+
+
+# TO DO: implement decision_six function call
+def decision_six():
+    """
+    Sixth decision function, 'off' option
+    """
+    print("Test decision_six function")
+
+
+# TO DO: implement decision_seven function call
+def decision_seven():
+    """
+    Seventh decision function, 'no' option
+    """
+    print("Test decision_seven function")
 
 
 # decision_eight function call
