@@ -245,12 +245,29 @@ def decision_eight_end():
         f"What could you have done different {USERNAME}?", decision_one)
 
 
-# TO DO: implement decision_nine function call
+# decision_nine function call
 def decision_nine():
     """
     Ninth decision function, 'walk' option
     """
-    print("Test decision_ninth function")
+    # print_statements function call
+    print_statements([
+        "A few blocks the smell of fresh coffee burst through your nose",
+        "You step over something and turn around to see what it was",
+        "An empty plastic bottle on the ground\n"
+    ])
+    # decision function call
+    decision(
+        "Do youpick it up or keep on walking? (enter 'pick' or 'walk')\n",
+        "pick", "walk", decision_ten_alt_one, decision_nine_end)
+
+
+# TO DO: implement decision_nine_end function call
+def decision_nine_end():
+    """
+    Ninth decision function, 'walk' option, game over
+    """
+    print("Test decision_nine_end function")
 
 
 # decision_ten function call
@@ -267,6 +284,14 @@ def decision_ten():
     decision(
         "Hmmm, elevator or stairs? (enter 'elevator' or 'stairs')\n",
         "elevator", "stairs", decision_eleven, decision_ten_win)
+
+
+# TO DO: implement decision_ten_alt_one function call
+def decision_ten_alt_one():
+    """
+    Tenth alternative one decision function, 'pick' option
+    """
+    print("Test decision_ten_alt_one function")
 
 
 # decision_ten_win call
