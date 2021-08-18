@@ -262,12 +262,21 @@ def decision_nine():
         "pick", "walk", decision_ten_alt_one, decision_nine_end)
 
 
-# TO DO: implement decision_nine_end function call
+# decision_nine_end function call
 def decision_nine_end():
     """
     Ninth decision function, 'walk' option, game over
     """
-    print("Test decision_nine_end function")
+    # print_statements function call
+    print_statements([
+        "'Somebody else will pick it up', you think",
+        "There is a buzzing noise coming from behind",
+        "You see the bee land on the plastic bottle\n"
+    ])
+    # killed_the_bees function call
+    killed_the_bees(
+        f"{USERNAME}, remember! Plastic takes up to 450 years to decompose.",
+        decision_one)
 
 
 # decision_ten function call
