@@ -192,7 +192,7 @@ def decision_seven():
     # print_statements function call
     print_statements([
         "And out the door, down the elevator, out to the world",
-        "The bus stop is only a few blocks away",
+        "The bus stop is only a block away",
         "Last time the bus was late and you didn't make it in time to work",
         "There is a taxi stopped at the traffic light\n"
     ])
@@ -394,12 +394,41 @@ def decision_eleven_end():
         decision_one)
 
 
-# TO DO: implement decision_twelve function call
+# decision_twelve function call
 def decision_twelve():
     """
     Twelfth decision function, 'bus' option
     """
-    print("Test decision_twelfth function")
+    # print_statements function call
+    print_statements([
+        "You see it coming right around the corner",
+        "'Great! I have time to stop for a snack'\n",
+        "You get off the bus and enter the mini market next to your office",
+        f"'Hey, {USERNAME}! How are you? I got your favorite sandwich in.'",
+        "'Hi, Pat. Thank you, but I decided to be more considerate",
+        " about prepackaged items and plastic waste'\n"
+    ])
+    # decision function call
+    decision(
+        "Do you go for a loose fruit or the prepackaged sandwich?"
+        " (enter 'fruit' or 'sandwich')\n",
+        "fruit", "sandwich", decision_ten_alt, decision_twelve_end)
+
+
+# TO DO: implement decision_ten_alt function call
+def decision_ten_alt():
+    """
+    Tenth alternative decision function, 'fruit' option
+    """
+    print("Test for decision_ten_alt")
+
+
+# TO DO: implement decision_twelve_end function call
+def decision_twelve_end():
+    """
+    Twelfth end decision function, 'sandwich' option
+    """
+    print("Test for decision_twelve_end")
 
 
 start()
